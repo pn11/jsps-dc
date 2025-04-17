@@ -1,0 +1,325 @@
+\documentclass[11pt,a4paper,twoside]{jarticle}
+%==== 科研費LaTeX =============================================
+%	2015(H27)年度 DC
+%============================================================
+% 2008-03-08: Taku Yamanaka (JSPS Research Center for Science Systems / Osaka Univ.)
+% 2009-03-03: Yoko Yanagida (Assistant)
+% 2010-03-03: Taku: Imported new features introduced in 2009 fall.
+% 2011-02-25: Taku: Revised for JFY2013.
+% 2013-03-14: Taku: Revised for JFY2014.
+%============================================================
+\input{forms/form00_header}
+% user01_header
+%＝＝＝　様式のファイルの形式の指定　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+%   PDFではなく、eps の様式を読み込む場合は、次の行の頭に「%」をつけてください。
+\setboolean{usePDFform}{true}
+%＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+\input{forms/form01_header}
+
+% user02_header
+%＝＝＝　予算の表の印刷　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+% 予算の集計の表を出すためには、次の行の頭の%を消してください。
+%\setboolean{BudgetSummary}{true}
+%＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+% ＝＝＝　一部のページだけタイプセット　＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+% New in 2009 fall version!
+% 選んだページだけタイプセットするには、次の例の頭の%を消し、並べてください。
+% 複数のページを選ぶこともできます。
+% 提出前には、必ず全てコメントアウト(頭に%をつける)してください。
+%ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+%\KLTypesetPage{1}			% p.1 (or p.1を含む連続したページ),
+%\KLTypesetPage{3}			% p.3 (or p.3を含む連続したページ),
+%\KLTypesetPagesInRange{5}{6}	% p.5 ~ p.6,
+%\KLTypesetPagesInRange{8}{10}	% and p.8 ~ p.10
+%＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+% ===== my favorite packages ====================================
+% ここに、自分の使いたいパッケージを宣言して下さい。
+\usepackage{wrapfig}
+% \usepackage{amssymb}
+%\usepackage{mb}
+% \usepackage{color} % でも科研費の書類はグレースケールで印刷されます
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+%==========================================================
+
+\newcommand{\KLShouKeiLine}[1]{\cline{#1}}
+%もし、小計の上の線を取れと事務に言われたら、
+%「そのようなことは、記入要項に書かれていないし、学振はそのようなことは気にしていない。」と
+% 突っぱねる。
+% それでもなお消せと理不尽なことを言われたら、次の行の 最初の「%」を消す。	
+%\renewcommand{\KLShouKeiLine}[1]{}
+
+\newcommand{\KLBudgetTableFontSize}{small}	% 予算の表のフォントの大きさ: small, footnotesize
+\newcommand{\KLFundsTableFontSize}{normalsize}	%応募中、受入れ予定の研究費のフォントの大きさ：normalsize, small, footnotesize
+
+% ===== my personal definitions ==================================
+% ここに、自分のよく使う記号などを定義して下さい。
+\newcommand{\klpionn}{K_L \to \pi^0 \nu \overline{\nu}}
+\newcommand{\kppipnn}{K^+ \to \pi^+ \nu \overline{\nu}}
+
+
+\input{forms/hook3} % for future maintenance
+% ===== Global definitions for the PD form ======================
+%　基本情報
+%
+%------ 研究課題名  -------------------------------------------
+\newcommand{\研究課題名}{象の卵}
+
+%----- 研究機関名と研究代表者の氏名-----------------------
+\newcommand{\研究機関名}{逢坂大学}
+\newcommand{\申請者氏名}{湯川秀樹}
+\newcommand{\研究代表者氏名}{\申請者氏名}
+
+%---- 研究期間の最終年度 ----------------
+\newcommand{\研究期間の最終元号年度}{29}	%平成で、半角数字のみ
+%=========================================================
+\input{forms/form02_2015_header}	%<<<
+\input{forms/form03_header}
+\input{forms/form05_dc_header}
+\input{forms/form07_header}
+%============================================================
+%endPrelude
+
+\begin{document}
+\input{forms/hook5} % for future maintenance
+%============================================================
+%     User Inputs
+%============================================================
+
+%form: dc_form_03-04.tex ; user: dc_03-04_preparation_etc.tex
+%========== DC =========
+%===== p. 03-04 現在までの研究状況 =============
+\section{現在までの研究状況}
+%watermark: w03_past_dc
+\newcommand{\研究の背景}{%
+%begin  研究の背景＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	象の卵の研究の背景は．．．
+
+	\begin{thebibliography}{99}
+		\bibitem{teramura} 寺村輝夫、「ぼくは王様 - ぞうのたまごのたまごやき」.
+	\end{thebibliography}
+%end  研究の背景 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\newcommand{\現在までの研究状況}{%
+%begin  現在までの研究状況＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	今までは、地球上で最大の生物、シロナガスクジラの卵の研究を進めようとしてきた。
+	クジラの卵の場合は、高い水圧に耐える必要があるため、堅固の構造となっているはずであり、
+	これが解明されれば、将来、深海潜水艇への応用も効く。
+	しかし、シロナガスクジラの生息範囲が広い、海に潜っている時間が長い、
+	生息数も減っている、などの原因により、
+	卵を見つけることができなかった。
+	
+	そこで、\underline{地球で}最大の動物から、\underline{地上で}最大の動物に研究対象を変更する。
+
+	\input{blahblah}  % << only for demonstration. Please delete it or comment it out.	
+%end  現在までの研究状況 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+%form: dc_form_05.tex ; user: dc_05_purpose.tex
+%========== DC =========
+%===== p. 05 研究の目的・内容 =============
+\subsection{研究の目的・内容}
+\newcommand{\研究目的}{%
+%begin  研究目的と内容＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	象の卵の研究の目的は．．．
+%end  研究目的と内容 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+%form: dc_form_06.tex ; user: dc_06_plan.tex
+%========== DC =========
+%===== p. 06 研究の特色・独創的な点、年次計画 =============
+\newcommand{\研究の特色と独創的な点}{%
+%begin  研究の特色と独創的な点＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	象の卵の特色と独創的な点は．．．
+%end  研究の特色と独創的な点 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\newcommand{\年次計画１年目}{%
+%begin  年次計画１年目＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	初年度は、まず世界の動物園を巡り、象舍に卵が隠されていないか、探す。
+	\vspace{3cm}% adjust the length if necessary
+%end  年次計画１年目 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\newcommand{\年次計画２年目}{%
+%begin  年次計画２年目＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	２年目はアフリカに行き、空と地上から象の卵を探す。
+	アフリカ象は気性が荒いが、サバンナの方がジャングルよりも見通しが効くので、
+	インドよりもアフリカを先に探索する。
+	\vspace{3cm}% adjust the length if necessary
+%end  年次計画２年目 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\newcommand{\年次計画３年目}{%
+%begin  年次計画３年目＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	３年目は、インドとタイに行き、ジャングルに隠されている卵を探す。
+	ジャングルの場合は空からは探しにくいが、象使いも多く、象の背中に乗って
+	象の視点から探索することができる。
+	さらに、気だての優しいインド象ならば
+	卵の在処を教えてくれる可能性もある。
+	\vspace{3cm}% adjust the length if necessary
+%end  年次計画３年目 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+%form: dc_form_07.tex ; user: dc_07_rights.tex
+%========== DC =========
+%===== p. 07 人権の保護及び法令等の遵守への対応 =============
+\subsection{人権の保護及び法令等の遵守への対応}
+\newcommand{\人権の保護及び法令等の遵守への対応}{%
+%begin  人権の保護及び法令等の遵守への対応　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	象の卵のES細胞の培養、象のクローンの生成などは行わない。
+	象個体を現地から持ち出すことはないので、ワシントン条約ならびに
+        生物多様性条約に抵触しない。また、組換え実験は行なわないので、
+        カルタヘナ議定書にも抵触しない。
+%end  人権の保護及び法令等の遵守への対応　＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+%form: dc_form_08.tex ; user: dc_08_publications.tex
+%========== DC =========
+%===== p. 08 研究業績 =============
+\section{研究業績}
+\subsection{学術雑誌(紀要・論文集等も含む)に発表した論文及び著書}
+\newcommand{\学術雑誌等に発表した論文または著書}{%
+%begin  学術雑誌等に発表した論文または著書＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	
+	\begin{enumerate}
+		\item[](査読有り)%===========================
+		\item \underline{H. Yukawa}$^1$, J. Kara$^2$,
+				``Theory of Elephant Eggs'', 
+				Phys.\ Rev.\ Lett. {\bf 800}, 800-804 (2005). 
+				
+		\item F.~Ehrlich, \underline{H. Yukawa}$^1$,
+				``You can't Lay an Egg If You're an Elephant'', 
+				JofUR\\
+				 ({\tt www.universalrejection.org}), {\bf N/A}, N/A (2002).
+
+		\item[](査読なし)%=============================
+		\item Kobo Abe$^3$, \underline{H. Yukawa}$^1$, 
+				``仔象は死んだ'', 
+				安部公房全集, {\bf 26}, 100-200, (2004).
+	\end{enumerate}
+	他５報\\
+	注：著者の所属・職（論文発表時）\\
+	1: 大阪大学理学研究科大学院生、
+	2: 明治大学文学部学生、
+	3: 東京帝国大学医学部学生、
+	4: ミッキー大学教授、
+	5: Univ. of Zoo大学院生
+%end  学術雑誌等に発表した論文または著書 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\subsection{学術雑誌等又は商業誌における解説・総説}
+\newcommand{\学術雑誌等または商業誌における解説や総説}{%
+%begin  学術雑誌等または商業誌における解説や総説＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	\begin{enumerate}
+		\item R.~Kipling, \underline{H. Yukawa},
+				``The Elephant's Child (象の鼻はなぜ長い)'', 
+				Nature, {\bf 999}, 777-779, (2003).
+	\end{enumerate}
+	他２件
+%end  学術雑誌等または商業誌における解説や総説 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\subsection{国際会議における発表}
+\newcommand{\国際会議における発表}{%
+%begin  国際会議における発表＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	\begin{enumerate}
+		\item $\circ$ 湯川秀樹、
+			``Theory of Elephant Eggs'', 
+			原始殻物理国際会議、
+			カラチ、2006年2月
+
+		\item $\circ$ 湯川秀樹、Jacques-Yves Cousteau,
+			``How to search for whale eggs'',
+			国際海洋探索会議、ハワイ、2003年4月
+	\end{enumerate}
+	他１件
+%end  国際会議における発表 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\subsection{国内学会・シンポジウムにおける発表}
+\newcommand{\国内学会やシンポジウムにおける発表}{%
+%begin  国内学会やシンポジウムにおける発表＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	\begin{enumerate}
+		\item $\circ$ 湯川秀樹、朝永振一郎、
+			「ほ乳類の真の意味」、
+			ほ乳類学会、
+			東京、2003年6月
+	\end{enumerate}
+	他３件
+%end  国内学会やシンポジウムにおける発表 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\subsection{特許等}
+\newcommand{\特許等}{%
+%begin  特許等＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	\begin{enumerate}
+		\item[](公開中)
+		\item 800800号、「クジラの卵を用いた深海潜水艇」\underline{湯川秀樹}、2003年4月
+%		\item[] (申請中)
+%		\item 8000000号、「象の卵を用いた（ひ・み・つ）」、\underline{湯川秀樹}、2007年4月
+	\end{enumerate}		
+%end  特許等 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\subsection{その他の業績}
+\newcommand{\その他の業績}{%
+%begin  その他の業績＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+		\begin{enumerate}
+			\item もうすぐもらえるで賞
+		\end{enumerate}
+%end  その他の業績 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+\subsection{発表前}
+\newcommand{\発表前の業績}{%
+%begin  発表前の業績＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	【発表(印刷)前】\\
+	{\bf(1)学術雑誌等（紀要・論文集等も含む)に採録決定されたもの}\\
+	　(査読有り)\\
+	　1) 島崎藤村$^2$ 「夜明け前」『中央公論』中央公論社、800号、pp1-800 (1935). 
+	  (証明書\textcircled{1}添付)\\
+	  \noindent
+	  {\bf(4)国際学会・シンポジウム等における発表の申し込みが受理されたもの}\\
+	　2) ◯\underline{湯川秀樹}「象の卵、ついに発見！」『オリンピック』ロンドン, 2012年
+	  (証明書\textcircled{2}添付)
+%end  発表前の業績 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+%form: dc_form_09.tex ; user: dc_09_myself.tex
+%========== DC =========
+%===== p. 09 自己評価 =============
+\section{自己評価}
+\newcommand{\自己評価}{%
+%begin  自己評価＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+{\bf 1. 研究職を志望する動機、目指す研究者像、自己の長所等}
+
+私は、今までの世界観を全く変える発見をしたい。
+そのためには、あくせく金を稼ぐ普通の仕事ではなく、
+じっくりと研究と野球に取り組める研究職しかない。
+
+私が理想とする研究者は、三四郎の友人でもある、野々宮宗八である。
+彼は俗世間の現実に煩わされることなく、
+地下の実験室で黙々と光の圧力の測定に取り組んでいる。
+彼こそが、真の研究者である。
+
+自分の長所は、まじめで賢いことである。
+
+\vspace{5mm}
+{\bf 2. 自己評価をする上で、特に重要と思われる事項}
+
+間もなく、ノーベル賞受賞予定。
+%end  自己評価 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+}
+
+
+%endUserFiles
+\input{forms/hook7} % for future maintenance
+
+\input{forms/dc_forms}
+%endFormatFile
+
+\input{forms/hook9} % for future maintenance
+\end{document}

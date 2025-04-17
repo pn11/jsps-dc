@@ -1,0 +1,18 @@
+%==========================================================
+% form01_header.tex
+%	2014-03-02: Taku Yamanaka (Osaka Univ.)
+%		This is called after usePDFform is set.
+%		Originally, this part was in form07_header.tex, but then
+%		\usepackage{color} that is called before it was not effective.
+%		[dvipdfmx] is not used for eps forms, because it makes the forms
+%		slightly larger than pdf forms.
+%		
+%==========================================================
+% ===== File format for forms ===========================
+\ifthenelse{\boolean{usePDFform}}{
+	\newcommand{\KLFormFormat}{pdf}	\usepackage[dvipdfmx]{graphicx}
+}{	\newcommand{\KLFormFormat}{eps}	\usepackage{graphicx}
+}
+
+%----------------------------------------------------------------------------
+

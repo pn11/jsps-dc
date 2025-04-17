@@ -1,0 +1,77 @@
+%=================================================================
+% form05_dc_header.tex
+%	for the 2007(H19) Japanese Fiscal Year
+%	2006-10-01 : Taku Yamanaka (Osaka Univ.)
+%			Switched to the new development system using a "mother file".
+%	2007-08-08: Taku
+%			Switched to a new method using "picture" environment.
+%	2008-03-08: Taku
+%			Readjusted parameters for the new 2008 form.
+%	2009-09-04: Taku
+%			Introduced form03_header and form07_header to automatically calculate margins and
+%			other miscellaneous coordinate parameters.
+%=================================================================
+
+% ===== Global definitions for the Kakenhi form ======================
+%　基本情報
+\newcommand{\研究種目}{DC}
+\newcommand{\研究種目後半}{}
+\ifthenelse{\isundefined{\研究種別}}{
+	\newcommand{\研究種別}{}
+}{}%
+\newcommand{\KLMainFile}{dc.tex}
+\newcommand{\KLForms}{dc_forms}
+\newcommand{\KLYoshiki}{dc}
+
+%　奇数ページの下に記入される情報
+\newcommand{\klbyYup}{}
+\newcommand{\klbyYdown}{}
+\newcommand{\klbyKikanXleft}{}
+\newcommand{\klbyKikanXright}{}
+\newcommand{\klbyNameXleft}{}
+\newcommand{\klbyNameXright}{}
+
+\newcommand{\KLBottomInfo}[6]{%
+	\ifthenelse{\equal{#1}{}}{%
+		\renewcommand{\klbyYup}{60}
+		\renewcommand{\klbyYdown}{45}
+	}{%
+		\renewcommand{\klbyYup}{#1}
+		\renewcommand{\klbyYdown}{#2}
+	}
+	
+	\ifthenelse{\equal{#3}{}}{%
+		\renewcommand{\klbyKikanXleft}{132}
+		\renewcommand{\klbyKikanXright}{349}
+		\renewcommand{\klbyNameXleft}{425}
+		\renewcommand{\klbyNameXright}{550}
+	}{%
+		\renewcommand{\klbyKikanXleft}{#3}
+		\renewcommand{\klbyKikanXright}{#4}
+		\renewcommand{\klbyNameXleft}{#5}
+		\renewcommand{\klbyNameXright}{#6}
+	}
+%	\KLTextBox{\klbyKikanXleft}{\klbyYup}{\klbyKikanXright}{\klbyYdown}{}{\研究機関名}%
+	\KLTextBox{\klbyNameXleft}{\klbyYup}{\klbyNameXright}{\klbyYdown}{}{\申請者氏名}%
+}
+
+%==========================================================
+% frame edge positions of multi-page-block
+\newcommand{\KLOddMultiPageLeftEdge}{48}
+\newcommand{\KLOddMultiPageRightEdge}{550}
+\newcommand{\KLEvenMultiPageLeftEdge}{46}
+\newcommand{\KLEvenMultiPageRightEdge}{551}
+
+% vertical limits in the first multi-page-block
+\newcommand{\KLMultiPageTopEdge}{806}		%lowest top position (except for the 1st page)
+\newcommand{\KLMultiPageBottomEdge}{79}	%highest bottom position (except for the last page)
+
+% Modify the edges for single page frames if necessary
+\newcommand{\KLOddLeftEdge}{48}
+\newcommand{\KLOddRightEdge}{550}
+\newcommand{\KLEvenLeftEdge}{46}
+\newcommand{\KLEvenRightEdge}{551}
+
+%==========================================================
+
+%

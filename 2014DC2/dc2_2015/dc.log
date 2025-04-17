@@ -1,0 +1,399 @@
+This is e-pTeX, Version 3.1415926-p3.3-110825-2.4 (utf8.euc) (TeX Live 2012) (format=platex 2012.6.30)  16 APR 2014 19:53
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**dc.tex
+(./dc.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2011/06/27> patch level 0)
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/usr/local/texlive/2012/texmf-dist/tex/platex/base/jarticle.cls
+Document Class: jarticle 2006/06/27 v1.6 Standard pLaTeX class
+\c@@paper=\count81
+(/usr/local/texlive/2012/texmf-dist/tex/platex/base/jsize11.clo
+File: jsize11.clo 2006/06/27 v1.6 Standard pLaTeX file (size option)
+)
+\c@part=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 601.
+\toclineskip=\dimen118
+\@lnumwidth=\dimen119
+\bibindent=\dimen120
+\heisei=\count90
+)
+(./forms/form00_header.tex (./forms/preamble.tex
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(./forms/kakenhi6.sty
+\c@klTomboHalfLen=\count91
+\c@klTomboFrom=\count92
+\c@klTextX=\count93
+\c@klTextY=\count94
+\c@klWidth=\count95
+\c@klHeight=\count96
+\c@klParboxX=\count97
+\c@klParboxY=\count98
+\c@klParboxW=\count99
+\c@klParboxH=\count100
+\c@klpbSideMargin=\count101
+\c@klpbTopMargin=\count102
+\c@klpbBottomMargin=\count103
+\Numa=\count104
+\Numb=\count105
+\c@KLtmp=\count106
+\c@KLCost=\count107
+\c@KLGrandTotalValue=\count108
+\c@KLYearCount=\count109
+\c@KLPrintYear=\count110
+\c@KLequipments0=\count111
+\c@KLequipments1=\count112
+\c@KLequipments2=\count113
+\c@KLequipments3=\count114
+\c@KLequipments4=\count115
+\c@KLequipments5=\count116
+\c@KLequipments6=\count117
+\c@KLequipments7=\count118
+\c@KLexpendables0=\count119
+\c@KLexpendables1=\count120
+\c@KLexpendables2=\count121
+\c@KLexpendables3=\count122
+\c@KLexpendables4=\count123
+\c@KLexpendables5=\count124
+\c@KLexpendables6=\count125
+\c@KLexpendables7=\count126
+\c@KLdomestic0=\count127
+\c@KLdomestic1=\count128
+\c@KLdomestic2=\count129
+\c@KLdomestic3=\count130
+\c@KLdomestic4=\count131
+\c@KLdomestic5=\count132
+\c@KLdomestic6=\count133
+\c@KLdomestic7=\count134
+\c@KLforeign0=\count135
+\c@KLforeign1=\count136
+\c@KLforeign2=\count137
+\c@KLforeign3=\count138
+\c@KLforeign4=\count139
+\c@KLforeign5=\count140
+\c@KLforeign6=\count141
+\c@KLforeign7=\count142
+\c@KLtravel0=\count143
+\c@KLtravel1=\count144
+\c@KLtravel2=\count145
+\c@KLtravel3=\count146
+\c@KLtravel4=\count147
+\c@KLtravel5=\count148
+\c@KLtravel6=\count149
+\c@KLtravel7=\count150
+\c@KLgratitude0=\count151
+\c@KLgratitude1=\count152
+\c@KLgratitude2=\count153
+\c@KLgratitude3=\count154
+\c@KLgratitude4=\count155
+\c@KLgratitude5=\count156
+\c@KLgratitude6=\count157
+\c@KLgratitude7=\count158
+\c@KLmisc0=\count159
+\c@KLmisc1=\count160
+\c@KLmisc2=\count161
+\c@KLmisc3=\count162
+\c@KLmisc4=\count163
+\c@KLmisc5=\count164
+\c@KLmisc6=\count165
+\c@KLmisc7=\count166
+\c@KLAnnualSum0=\count167
+\c@KLAnnualSum1=\count168
+\c@KLAnnualSum2=\count169
+\c@KLAnnualSum3=\count170
+\c@KLAnnualSum4=\count171
+\c@KLAnnualSum5=\count172
+\c@KLAnnualSum6=\count173
+\c@KLAnnualSum7=\count174
+\KLCostWidth=\skip43
+\c@KLRemainingEffort=\count175
+\c@KLNumPeople=\count176
+\c@KLDistBudgetSum=\count177
+\c@klSecondPage=\count178
+\KLLineLength=\skip44
+\c@KLBibCounter=\count179
+)
+\KLCella=\skip45
+\KLCellb=\skip46
+\KLCellc=\skip47
+\KLCelld=\skip48
+\KLCelle=\skip49
+\KLCellf=\skip50
+\KLCellg=\skip51
+\KLCellh=\skip52
+\KLSubPageX=\skip53
+\KLSubPageY=\skip54
+\KLspx=\skip55
+\KLspy=\skip56
+\c@KLParboxSideMargin=\count180
+\c@KLParboxTopMargin=\count181
+\c@KLParboxBottomMargin=\count182
+\c@KLSubPageNo=\count183
+\c@KLPageOffset=\count184
+\c@KLMaxYearCount=\count185
+\c@klpage=\count186
+\c@klpageLimit=\count187
+) (./forms/form01_header.tex
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 91.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+File: dvipdfmx.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen121
+\Gin@req@width=\dimen122
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen123
+\WF@size=\dimen124
+\c@WF@wrappedlines=\count188
+\WF@box=\box41
+\WF@everypar=\toks16
+Package: wrapfig 2003/01/31  v 3.6
+)
+(./forms/hook3.tex) (./forms/form02_2015_header.tex) (./forms/form03_header.tex
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count189
+\calc@Bcount=\count190
+\calc@Adimen=\dimen125
+\calc@Bdimen=\dimen126
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count191
+\calc@Cskip=\skip59
+) (./watermark.sty
+Package: watermark 2004/12/09 v1.1 Watermarks (NCC)
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip60
+\LTright=\skip61
+\LTpre=\skip62
+\LTpost=\skip63
+\LTchunksize=\count192
+\LTcapwidth=\dimen127
+\LT@head=\box42
+\LT@firsthead=\box43
+\LT@foot=\box44
+\LT@lastfoot=\box45
+\LT@cols=\count193
+\LT@rows=\count194
+\c@LT@tables=\count195
+\c@LT@chunks=\count196
+\LT@p@ftn=\toks17
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count197
+\Gm@cntv=\count198
+\c@Gm@tempcnt=\count199
+\Gm@bindingoffset=\dimen128
+\Gm@wd@mp=\dimen129
+\Gm@odd@mp=\dimen130
+\Gm@even@mp=\dimen131
+\Gm@layoutwidth=\dimen132
+\Gm@layoutheight=\dimen133
+\Gm@layouthoffset=\dimen134
+\Gm@layoutvoffset=\dimen135
+\Gm@dimlist=\toks18
+)
+(./udline.sty
+Package: udline 2005/01/28 下線マクロ ver2.52：ロードします
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen136
+\extrarowheight=\dimen137
+\NC@list=\toks19
+\extratabsurround=\skip64
+\backup@length=\skip65
+)
+\KLoddsidemargin=\skip66
+\KLevensidemargin=\skip67
+\KLtopmargin=\skip68
+\c@KLCOddPictureInWaterMarkX=\count200
+\c@KLCEvenPictureInWaterMarkX=\count201
+\c@KLCPictureInWaterMarkY=\count202
+\c@KLCOddPictureX=\count203
+\c@KLCEvenPictureX=\count204
+\c@KLCPictureY=\count205
+)
+(./forms/form05_dc_header.tex) (./forms/form07_header.tex)
+No file dc.aux.
+\openout1 = `dc.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(0.0pt, 597.50787pt, 0.0pt)
+* v-part:(T,H,B)=(0.0pt, 845.04684pt, 0.0pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=489.0pt
+* \textheight=713.0pt
+* \oddsidemargin=-16.0pt
+* \evensidemargin=-18.0pt
+* \topmargin=-29.0pt
+* \headheight=0.0pt
+* \headsep=0.0pt
+* \topskip=8.51457pt
+* \footskip=0.0pt
+* \marginparwidth=124.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./forms/hook5.tex) (./forms/hook7.tex) (./forms/dc_forms.tex
+(./forms/dc_form_03-04.tex
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 31.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 31.
+ (./blahblah.tex)) (./forms/dc_form_05.tex
+File: dc_forms_pdf/dc-page1.pdf Graphic file (type pdf)
+
+<dc_forms_pdf/dc-page1.pdf> [1
+
+]
+File: dc_forms_pdf/dc-page2.pdf Graphic file (type pdf)
+ <dc_forms_pdf/dc-page2.pdf> [2
+
+]
+File: dc_forms_pdf/dc-page3.pdf Graphic file (type pdf)
+
+<dc_forms_pdf/dc-page3.pdf>) (./forms/dc_form_06.tex [3]
+File: dc_forms_pdf/dc-page4.pdf Graphic file (type pdf)
+
+<dc_forms_pdf/dc-page4.pdf>) (./forms/dc_form_07.tex [4]
+File: dc_forms_pdf/dc-page5.pdf Graphic file (type pdf)
+
+<dc_forms_pdf/dc-page5.pdf>) (./forms/dc_form_08.tex [5]
+File: dc_forms_pdf/dc-page6.pdf Graphic file (type pdf)
+
+<dc_forms_pdf/dc-page6.pdf>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 73.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 73.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 73.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 73.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 73.
+)
+(./forms/dc_form_09.tex [6]
+File: dc_forms_pdf/dc-page7.pdf Graphic file (type pdf)
+ <dc_forms_pdf/dc-page7.pdf>
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 13.
+)
+(./forms/dc_form_10.tex [7]
+File: dc_forms_pdf/dc-page8.pdf Graphic file (type pdf)
+ <dc_forms_pdf/dc-page8.pdf>)) (./forms/hook9.tex)
+[8] (./dc.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2415 strings out of 494059
+ 32084 string characters out of 3156205
+ 102836 words of memory out of 3000000
+ 5786 multiletter control sequences out of 15000+200000
+ 12520 words of font info for 49 fonts, out of 3000000 for 9000
+ 745 hyphenation exceptions out of 8191
+ 33i,12n,42p,215b,408s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on dc.dvi (8 pages, 16480 bytes).
